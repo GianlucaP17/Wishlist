@@ -1,4 +1,4 @@
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const username = urlParams.get('username')
-window.location.href = "wishlist://username:" + username;
+var url_string = window.location.href
+var url = new URL(url_string);
+var c = url.searchParams.get("username");
+console.log(c);

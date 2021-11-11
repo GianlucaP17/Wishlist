@@ -1,4 +1,5 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const product = urlParams.get('username')
-window.location = "wishlist://username:" + product;
+const username = urlParams.get('username')
+const wish = urlParams.get('wish')
+window.location = "wishlist://username:" + username + wish;
